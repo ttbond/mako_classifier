@@ -16,7 +16,7 @@ $ git clone https://github.com/ttbond/mako_classifier.git
 
 Open the folder mako_classifier at terminal, files include:
 
-* testData: three vcf file from Mako which can be used to test the script
+* testData: three vcf files from Mako which can be used to test the script
 * src: srcipts
 * model: a model trained with NA19240. Current version dose not support customised model training.
 
@@ -27,7 +27,7 @@ bash mako_classifier.sh [input] [directory] [output]
 ```
 * input: /path/to/discovered_SV_region.vcf
 * directory: the path of the directory where the script save temporary files and output file
-* output: the result will be saved as [directory]/[output].vcf (default is discovered_SV_region_withScore.vcf)
+* output: the result will be saved as [directory]/[output].vcf (default is discovered_SV_region_withScore.vcf)/
 ** Note that input and directory both need to be the absolute path
 ``` sh
 Example
