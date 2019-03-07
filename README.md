@@ -27,7 +27,7 @@ bash mako_classifier.sh [input] [directory] [output]
 ```
 * input: /path/to/discovered_SV_region.vcf
 * directory: the path of the directory where the script save temporary files and output file
-* output: the result will be saved as [directory]/[output].vcf (default is discovered_SV_region_withScore.vcf)/
+* output: the result will be saved as [directory]/[output].vcf (default is discovered_SV_region_withScore.vcf)\
 ** Note that input and directory both need to be the absolute path
 ``` sh
 Example
