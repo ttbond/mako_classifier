@@ -1,9 +1,9 @@
 # Mako_classifier
-Mako_classifier can classify the patterns found by Mako into three classes(DEL,DUP,INV) and give scores for complex SVs. Based on LSTM model,Mako_classifier can use the sequential information to classify the patterns.
+Mako_classifier can classify the patterns found by Mako into three classes(DEL,DUP,INV) and give scores for complex SVs. Based on LSTM model, Mako_classifier can use the sequential information to classify the patterns.
 
 # Install and run
 
-Mako_classifier requires linux OS and Python (3.5.2) to run. 
+Mako_classifier requires linux OS and Python (3.5.2) to run.
 
 #### Dependency
 * Numpy (>=1.15.0)
@@ -26,8 +26,8 @@ cd /path/to/mako_classifier/
 bash mako_classifier.sh [input] [directory] [output]
 ```
 * input: /path/to/discovered_SV_region.vcf
-* directory: the path of the directory where the script save temporary files and output file
-* output: the result will be saved as [directory]/[output].vcf (default is discovered_SV_region_withScore.vcf)\
+* directory: the path of the directory where the script saves temporary files and output file
+* output: the result will be saved as [directory]/[output].vcf (default is discovered_SV_region_withScore.vcf)
 ** Note that input and directory both need to be the absolute path
 ``` sh
 Example
