@@ -35,7 +35,7 @@ bash mako_classifier.sh /path/to/mako_classifier/testData/NA19240.Mako.reproduce
 ```
 
 #### Output format
-The SV output file will add two additional information (SVTYPE, CX) to the *.info.txt from Mako.
+The SV output file will add two additional information (SVTYPE, CX) to the *.vcf from Mako.
 * SVTYPE: the predicted type of the SV, can be DEL,DUP(INS included) and INV
 * CX: a score to measure the posibility of complex SV, high score indicates that this SV may be a complex SV
 
