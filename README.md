@@ -7,7 +7,7 @@ Mako_classifier requires linux OS and Python (3.5.2) to run.
 
 #### Dependency
 * Numpy (>=1.15.0)
-* Tensorflow (>=1.12.0) : can be installed by pip
+* Tensorflow (>=1.12.0)(https://www.tensorflow.org/): a package used for machine learning applications such as neural networks and can be installed by pip
 
 #### Usage
 ```sh
@@ -27,10 +27,11 @@ bash mako_classifier.sh [input] [directory] [output]
 ```
 * input: /path/to/discovered_SV_region.vcf
 * directory: the path of the directory where the script saves temporary files and output file
-* output: the result will be saved as [directory]/[output].vcf (default is discovered_SV_region_withScore.vcf)\
+* output: the result will be saved as [directory]/[output].vcf (default is discovered_SV_region_withScore.vcf)
 ** Note that input and directory both need to be the absolute path
-``` sh
+
 Example
+``` sh
 bash mako_classifier.sh /path/to/mako_classifier/testData/NA19240.Mako.reproduce.vcf /path/to/work/directory NA19240
 ```
 
