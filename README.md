@@ -7,7 +7,7 @@ Mako_classifier requires linux OS and Python (3.5.2) to run.
 
 #### Dependency
 * Numpy (>=1.15.0)
-* Tensorflow (>=1.12.0)(https://www.tensorflow.org/): a package used for machine learning applications such as neural networks and can be installed by pip
+* Tensorflow (>=1.12.0): a package used for machine learning applications such as neural networks,install instruction can be found at https://www.tensorflow.org/install
 
 #### Usage
 ```sh
