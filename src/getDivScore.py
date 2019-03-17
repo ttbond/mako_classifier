@@ -14,7 +14,7 @@ tarFolder=args.tarFolder
 relFileName=args.output
 sourceFile=args.sourceFile
 if relFileName=='None':
-    relFileName=tarFolder+sourceFile.split('/')[-1][:-4]+'.withScore.vcf'
+    relFileName=tarFolder+'/'+sourceFile.split('/')[-1][:-4]+'.withScore.vcf'
 else:
     relFileName=tarFolder+'/'+relFileName+'.vcf'
 myData=np.loadtxt(tarFolder+"/relSet3.dat")
@@ -46,4 +46,4 @@ with open(relFileName,'w') as relF, open(sourceFile) as srcF:
             if j==0:
                 print("SVTYPE=%s"%(outSvString[int(outRel[i,j])]),end=';',file=relF)
             else:
-                print("CX=%.3f"%(math.log(outRel[i,j],2)),file=relF)
+                print("CX=%.3f"%(outRel[i,j]),file=relF)
