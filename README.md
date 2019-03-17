@@ -18,9 +18,14 @@ Open the folder mako_classifier at terminal, files include:
 
 * testData: three vcf files from Mako which can be used to test the script
 * src: srcipts
-* model: a model trained with NA19240. Current version dose not support customised model training.
+* model: a model trained with HG00514 and HG00733.
 
-To run the script:
+In general, this classifier contains two steps, including training and prediction. 
+##### Step1: Model training
+The model we constructed is a neural network with three layers, including the input layer, the LSTM layer and a dense layer for output. It is trained on the SV datasets with high confidence, including real samples and simulated samples. Three kinds of SV types are used to train the model, including DEL, INS (DUP included) and INV. The details of model training is showed in *mako_classifier/src/scorer_lstm.py* . Current version dose not support customised model training, thus a well trained model is provided at *mako_classifier/model/simuModel.h5* .
+##### Step2: Prediction
+
+To predict new samples:
 ```sh
 cd /path/to/mako_classifier/
 bash mako_classifier.sh [input] [directory] [output]
