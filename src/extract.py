@@ -98,10 +98,11 @@ class mySv():
                 self.ent-=float(appearNum[i])/len(self.seq_type)*math.log(float(appearNum[i])/len(self.seq_type),2)
         arpNum=0
         for i in range(1,10):
-            if i==1 or i==2 or i==8:
+            if i==1 or i==2 or i==5:
                 continue
             if appearNum[i]>0:
                 arpNum+=1
+        #self.ent+=1
         self.ent*=arpNum
         li2=li[5].split(",")
         for i in range(0,len(li2)):
