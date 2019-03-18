@@ -46,4 +46,4 @@ with open(relFileName,'w') as relF, open(sourceFile) as srcF:
             if j==0:
                 print("SVTYPE=%s"%(outSvString[int(outRel[i,j])]),end=';',file=relF)
             else:
-                print("CX=%.3f"%(outRel[i,j]),file=relF)
+                print("CX=%.3f"%(math.log(outRel[i,j],2)),file=relF)
