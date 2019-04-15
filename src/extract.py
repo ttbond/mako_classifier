@@ -91,12 +91,13 @@ class mySv():
         self.defLen=0
         for i in range(len(self.seq_type)):
             appearNum[self.seq_type[i]]+=1
-            if appearNum[self.seq_type[i]]==1:
-                self.defLen+=1
+            #if appearNum[self.seq_type[i]]==1:
+                #self.defLen+=1
+            self.defLen+=1
         for i in range(1,10):
             if appearNum[i]>0:
                 self.ent-=float(appearNum[i])/len(self.seq_type)*math.log(float(appearNum[i])/len(self.seq_type),2)
-        arpNum=0
+        arpNum=1
         for i in range(1,10):
             if i==1 or i==2 or i==5:
                 continue
