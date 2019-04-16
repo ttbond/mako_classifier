@@ -1,6 +1,5 @@
 # Mako_classifier
-Mako_classifier can classify the patterns found by Mako into three classes(DEL,DUP,INV). Based on LSTM model, Mako_classifier can use the sequential information to classify the patterns.
-
+Mako_classifier is based on LSTM model and designed to classify Mako output to three primary SV types (DUP,DEL,INV).
 # Install and run
 
 Mako_classifier requires linux OS and Python (3.5.2) to run.
@@ -43,6 +42,6 @@ bash mako_classifier.sh /path/to/mako_classifier/testData/NA19240.Mako.reproduce
 #### Output format
 The SV output file will add two additional information (SVTYPE, CX) to the *.vcf from Mako.
 * SVTYPE: the predicted type of the SV, can be DEL,DUP(INS included) and INV
-* CX: a score to measure patterns with multiple breakpoints, higher score indicates complex alignment pattern of a region
+* CX: a score to measure the complexity of local alignment, higher score may indicates regions with multiple breakpoints
 
 
