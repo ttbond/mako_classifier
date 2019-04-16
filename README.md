@@ -43,6 +43,6 @@ bash mako_classifier.sh /path/to/mako_classifier/testData/NA19240.Mako.reproduce
 #### Output format
 The SV output file will add two additional information (SVTYPE, CX) to the *.vcf from Mako.
 * SVTYPE: the predicted type of the SV, can be DEL,DUP(INS included) and INV
-* CX: a score to measure patterns with multiple breakpoints, higher score indicates complex alignment pattern of region
+* CX: a score to measure patterns with multiple breakpoints, higher score indicates complex alignment pattern of a region
 
 
