@@ -1,5 +1,5 @@
 # Mako_classifier
-Mako_classifier can classify the patterns found by Mako into three classes(DEL,DUP,INV) and give scores for complex SVs. Based on LSTM model, Mako_classifier can use the sequential information to classify the patterns.
+Mako_classifier can classify the patterns found by Mako into three classes(DEL,DUP,INV). Based on LSTM model, Mako_classifier can use the sequential information to classify the patterns.
 
 # Install and run
 
@@ -43,6 +43,6 @@ bash mako_classifier.sh /path/to/mako_classifier/testData/NA19240.Mako.reproduce
 #### Output format
 The SV output file will add two additional information (SVTYPE, CX) to the *.vcf from Mako.
 * SVTYPE: the predicted type of the SV, can be DEL,DUP(INS included) and INV
-* CX: a score to measure the posibility of complex SV, high score indicates that this SV may be a complex SV
+* CX: a score to measure patterns with multiple breakpoints
 
 
